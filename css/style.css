@@ -12,7 +12,7 @@
 .box-shadow {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
 .green {color:#0f964b;}
 .highlight {
-    border-bottom: 8px solid #0f964b;
+    border-bottom: 3px solid #0f964b;
 }
 .uppercase {text-transform: uppercase;}
 .mx-7 {
@@ -29,6 +29,7 @@ body {
 }
 
 /* slider */
+
 .carousel-inner {
     position:relative;
 }
@@ -68,13 +69,14 @@ body {
 
 .nav-right a {
     text-decoration: none;
-    color:#0f964b;
+    color:#000;
     transition:300ms;
 }
 
 .nav-right a:hover {
     opacity: 0.8;
     transition: 300ms;
+    color: #0f964b;
 }
 
 .section-title {
@@ -162,6 +164,47 @@ body {
     z-index: 4;
 }
 
+/* service */
+
+.service-card {
+    transition: 400ms;
+    border-radius: 8px;
+    box-shadow: 0;
+    position: relative;
+    margin-top:1em;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    transition: 400ms;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    
+}
+
+.service-card img {
+    min-height: 100px;
+    object-fit: cover;
+    transition: 300ms; 
+    max-height: 150px;
+}
+
+.service-img {
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.service-card:hover .service-img img {
+    transform: scale(1.15);
+    transition: 10s;
+}
+
+.service-card:hover .prod-overlay {
+    opacity: 0.8;
+    transition: 1s ease-out;
+}
+
+/* tabs */
+
 
 .tab-left {
     padding:0.7em 0.5em;
@@ -247,7 +290,7 @@ body {
     position: absolute;
     width: auto;
     height: auto;
-    right:0;
+    right:-25%;
     opacity:0.05;
     overflow: hidden;
     user-select: none;
