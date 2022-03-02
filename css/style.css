@@ -25,7 +25,7 @@
 
 body {
     font-family: "Rubik", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     background-color:#fafafa;
 }
 
@@ -529,4 +529,9 @@ body {
   .top-button:hover {
       color:#fff;
       opacity: 1;
+  }
+
+/* daraa n ustgah */
+  .client img  {
+    filter: brightness(0.4);
   }
