@@ -524,6 +524,7 @@ body {
       text-decoration: none;
       opacity: 0.8;
       border-radius: 8px;
+      z-index: 999;
   }
 
   .top-button:hover {
