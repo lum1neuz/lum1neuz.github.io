@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" sizes="64x64" href="favicon64.png.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon16.png">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -30,18 +30,19 @@
     document.body.className = 'fade';
   </script>
  
-  <header class="py-3 sticky w-100 d-inline-flex flex-fill bg-trans">
-    <div class="d-flex col-xl-6 col-lg-4 px-5 mr-0 align-items-center logo-resp">
+  <header class="main-nav sticky-top w-100 d-inline-flex flex-fill bg-trans">
+    <div class="container-xl d-flex justify-content-between align-items-center">
+    <div class="logo4 d-flex">
       <a href="index.html">
-        <img class="logo" src="./img/logo.svg">
+        <img src="./img/logo.svg" width="150px">
       </a>
     </div>
-    <div class="header-nav justify-content-between col-xl-6 col-lg-8 d-lg-inline-flex">
+    <div class="header-nav justify-content-between align-items-center d-lg-inline-flex">
       <nav class="py-2 d-inline-flex align-items-center flex-fill">
-        <a class="nav-link hvr-underline-reveal" href="about.html">Бидний тухай</a>
-        <a class="nav-link hvr-underline-reveal" href="services.html">Үйлчилгээ</a>
-        <a class="nav-link hvr-underline-reveal" href="works.html">Ажлууд</a>
-        <a class="nav-link hvr-underline-reveal" href="contact.html">Холбоо барих</a>
+        <a class="nav-link" href="about.html">Бидний тухай</a>
+        <a class="nav-link" href="services.html">Үйлчилгээ</a>
+        <a class="nav-link" href="works.html">Ажлууд</a>
+        <a class="nav-link" href="contact.html">Холбоо барих</a>
         <nav
           class="nav-footer d-inline-flex align-self-center justify-content-center d-xl-none d-lg-none mx-auto flex-wrap flex-row">
           <a target="_blank" href="https://www.youtube.com/channel/UCu_18t2BxZ2B5fV2fPrpmIQ">youtube</a>
@@ -50,12 +51,14 @@
       </nav>
 
     </div>
-    <div class="collapse-button d-flex align-self-center ml-auto mr-5">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+
+  </div>
+  <div class="collapse-button d-flex align-self-center ml-auto mr-5">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   </header>
 
 
@@ -66,7 +69,7 @@
     <main class="main d-flex row flex-fill">
       <div
         class="d-flex flex-column col-lg-6 col-md-12 justify-content-lg-center justify-content-xl-center px-5 justify-content-end">
-          <p class="display-4 fw-bold text-white mb-4">Итгэл хүлээсэн гүйцэтгэгч</p>
+          <p class="h1 fw-bold text-white mb-4">Итгэл хүлээсэн гүйцэтгэгч</p>
           <p class="home-subtitle mb-4">10 жилийн туршлага дээр тулгуурласан хамгийн оновчтой таны арга хэмжээний онцлогт тохирсон бодит зөвлөгөөг
             бид танд өгнө.</p>
           <a href="projects.html" class="align-self-start home-big-button mt-3">Бүх ажлуудыг үзэх</a>

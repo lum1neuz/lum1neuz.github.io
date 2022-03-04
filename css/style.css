@@ -632,10 +632,6 @@ body {
     font-weight: 500;
 }
 
-.logo {
-    width: 230px;
-}
-
 
 #service-single .swiper-container {
     width: 100%;
@@ -646,18 +642,6 @@ body {
 .swiper-slide {
     background-size: cover;
     background-position: center;
-}
-
-.footer-link {
-    padding: 3px 10px;
-    margin-right: 50px;
-    opacity: 0.6;
-}
-
-.footer-link:hover {
-    text-decoration: none;
-    color: #fff;
-    opacity: 1;
 }
 
 .stretchbg {
@@ -692,6 +676,7 @@ body {
     -webkit-transition: 200ms linear;
     -o-transition: 200ms linear;
     transition: 200ms linear;
+    text-decoration: none;
 }
 
 .home-big-button:hover {
@@ -706,13 +691,19 @@ body {
 
 .nav-link {
     color: #fff;
-    margin-right: 30px;
-    font-size: 1.2rem;
+    padding:15px;
 }
 
+.nav-link:hover {
+    color: #1dce6d;
+}
+
+.nav-link:active {
+    color:#fff;
+}
 
 .home-subtitle {
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: 300;
     color: #fcfcfc;
 }
@@ -721,7 +712,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    height: 100vh;
+    height: calc(100vh - 70px);
 }
 
 /* Underline Reveal */
@@ -770,15 +761,15 @@ body {
 }
 
 
-.nav-link:hover {
-    color: #fff;
-}
+
+
 
 .footer-link {
     padding: 3px 10px;
     margin-right: 50px;
     opacity: 0.6;
     color:#fff;
+    text-decoration: none;
 }
 
 .footer-link:hover {
@@ -840,4 +831,20 @@ body {
     -webkit-transition-duration: 5s;
          -o-transition-duration: 5s;
             transition-duration: 5s;
+}
+
+.bg-trans {background-color: #00000050;}
+
+
+/* way the hell off screen */
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}
+
+.header-nav {
+    padding-right:17px;
 }
