@@ -45,7 +45,7 @@ a {
 .white-bg {
     background-color: #fc0;
     background-clip: content-box;
-    border-radius:12px;
+    border-radius: 12px;
 }
 
 .nav {
@@ -242,17 +242,17 @@ a.article:hover {
 }
 
 .news-all-link {
-    color:#567bff;
+    color: #567bff;
     transition: 0.3s;
 }
 
 .news-all-link:hover {
-    color:#4364dd;
+    color: #4364dd;
     transition: 0.3s;
 }
 
 .right-arrow::after {
-    content:"";
+    content: "";
     background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23567bff' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/></svg>");
     background-repeat: no-repeat;
     background-position: right;
@@ -261,19 +261,25 @@ a.article:hover {
     display: inline-block;
     vertical-align: -20%;
     transition: 300ms;
-    margin-left:10px;
+    margin-left: 6px;
 }
 
 .right-arrow:hover::after {
-    transform: translateX(8px);
+    transform: translateX(6px);
     transition: 500ms;
 }
+
 .right-arrow:hover {
-    transform: translateX(5px);
+    transform: translateX(3px);
     transition: 300ms;
-    color:#567bff;
+    color: #567bff;
 }
 
-.news-text {
-    border:1px solid #000;
+.news-text a {
+    transition: 0.2s;
+}
+
+.news-text a:hover {
+    color: #567bff;
+    transition: 0.2s;
 }
