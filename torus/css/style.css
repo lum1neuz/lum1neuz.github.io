@@ -792,6 +792,10 @@ Bootstrap 4 breakpoints
     .home-cat {
         font-size: 1.5em;
     }
+
+    .logo4 {
+        padding-top:10px;
+    }
     header .header-nav {
         display: none;
         -webkit-transition: 300ms ease-out;
