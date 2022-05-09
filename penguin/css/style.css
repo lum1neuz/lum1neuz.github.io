@@ -115,7 +115,8 @@ body {
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: left;
-    width: 33%;
+    width: 50%;
+    z-index: 99;
 }
 
 .fadeoverlay {
@@ -1050,6 +1051,11 @@ Bootstrap 4 breakpoints
         font-size: 0.8em;
     }
 
+    .carousel-caption h1 {
+        font-size: 1.2rem!important;
+    }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1119,12 +1125,32 @@ Bootstrap 4 breakpoints
     .home-big-button {
         font-size: 1em;
     }
+
 }
 
 @media (max-width: 991px) {
     body {
         overflow-x: hidden;
     }
+
+    .carousel-caption {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        text-align: left;
+        width: 100%;
+        z-index: 99;
+        transform: translateY(0);
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .mx-7 {
+        margin: 0 1.5em;
+    }
+
     .display-3 {
         font-size: 1.5rem;
     }
@@ -1141,8 +1167,14 @@ Bootstrap 4 breakpoints
     .home-cat {
         font-size: 1.5em;
     }
+
     .top-spacer {
-        margin-top:150px!important;
+        margin-top:100px!important;
+    }
+
+    header.not-home {
+        position: fixed!important;
+        background-color: #fff!important;
     }
 
     header .header-nav {
