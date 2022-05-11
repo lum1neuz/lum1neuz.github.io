@@ -1055,6 +1055,10 @@ Bootstrap 4 breakpoints
         font-size: 1.2rem!important;
     }
 
+  .desc-small {
+      font-size: 0.7em!important;
+  }
+
 
 }
 
