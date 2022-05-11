@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function (e) {
+    document.body.className = '';
+  });
+
+
+
 class HeaderComponent extends HTMLElement {
     constructor() {
         super();
