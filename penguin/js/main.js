@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
     document.body.className = '';
   });
   
-$('.collapse-button').click(function () {
-  $(this).toggleClass('open');
-  $('header').toggleClass('open', 200, "swing");
-});
+  $('.collapse-button').click(function () {
+    $(this).toggleClass('open');
+    $('header').toggleClass('open', 200, "swing");
+  });
+
 
 
           // ===== Scroll to Top ====
@@ -37,59 +38,13 @@ document.body.appendChild(scrollDiv);
 
 // Get the scrollbar width
 var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-console.log(scrollbarWidth); // Mac:  15
 
 // Delete the DIV 
 document.body.removeChild(scrollDiv);
 
 
 
-//swiper
-  var autoplay = 5000;
 
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-  slidesPerView: 'auto',
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      touchRatio: 1,
-    },
-    // when window width is >= 640px
-    960: {
-      touchRatio: 0,
-    }
-  }
-});
-
-var galleryTop = new Swiper('.gallery-top', {
-  effect: 'fade',
-  controller: {
-    control: galleryThumbs
-  },
-  thumbs: {
-    swiper: galleryThumbs,
-  },
-  autoplay: {
-    delay: autoplay,
-    disableOnInteraction: false
-  },
-  on: {
-    init: function () {
-      $(".swiper-progress-bar").removeClass("animate");
-      $(".swiper-progress-bar").removeClass("active");
-      $(".swiper-progress-bar").eq(0).addClass("animate");
-      $(".swiper-progress-bar").eq(0).addClass("active");
-    },
-    slideChangeTransitionStart: function () {
-      $(".swiper-progress-bar").removeClass("animate");
-      $(".swiper-progress-bar").removeClass("active");
-      $(".swiper-progress-bar").eq(0).addClass("active");
-    },
-    slideChangeTransitionEnd: function () {
-      $(".swiper-progress-bar").eq(0).addClass("animate");
-    }
-  }
-});
 
 
 
