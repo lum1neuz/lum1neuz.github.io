@@ -1,7 +1,3 @@
-  $('.collapse-button').click(function () {
-    $(this).toggleClass('open');
-    $('header').toggleClass('open', 200, "swing");
-  });
 
           // ===== Scroll to Top ====
 const scrollTop = document.getElementById('scrolltop')
