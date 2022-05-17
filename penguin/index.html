@@ -22,7 +22,9 @@
 </head>
 
 <body>
-    <script>document.body.className = 'fade';</script>
+    <script>
+        document.body.className = 'fade';
+    </script>
     <header class="main-nav sticky-top w-100 d-inline-flex flex-fill bg-trans">
         <div class="container-xl d-flex justify-content-end align-items-center">
             <div class="logo4 d-flex align-self-start">
@@ -74,23 +76,23 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img class="img-fluid" src="img/1.jpg">
-                            <p class="home-title">Paintbox collection</p>
-                            <p class="home-client"><span class="home-og-client">Client:</span> Gobi</p>
+                            <p class="home-title">Sauvage</p>
+                            <p class="home-client"><span class="home-og-client">Захиалагч:</span> Түшиг</p>
                         </div>
                         <div class="swiper-slide d-flex flex-column">
                             <img class="img-fluid" src="img/2.jpg">
-                            <p class="home-title">Calvet</p>
-                            <p class="home-client"><span class="home-og-client">Client:</span> World Wine</p>
+                            <p class="home-title">Whopper</p>
+                            <p class="home-client"><span class="home-og-client">Захиалагч:</span> BurgerKing</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="img-fluid" src="img/3.jpg">
-                            <p class="home-title">Encanto Tower</p>
-                            <p class="home-client"><span class="home-og-client">Client:</span> Encanto</p>
+                            <p class="home-title">Оддын дайн</p>
+                            <p class="home-client"><span class="home-og-client">Захиалагч:</span> JCDecaux</p>
                         </div>
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="img/4.jpg">
-                            <p class="home-title">Pepsi Black</p>
-                            <p class="home-client"><span class="home-og-client">Client:</span> Pepsi</p>
+                            <img class="img-fluid" src="img/4.JPG">
+                            <p class="home-title">Mongolia</p>
+                            <p class="home-client"><span class="home-og-client">Захиалагч:</span> Улаанбаатар хот</p>
                         </div>
                     </div>
                 </div>
@@ -112,12 +114,12 @@
             <div class="swiper-slide" style="background-image:url(img/1.jpg)"></div>
             <div class="swiper-slide" style="background-image:url(img/2.jpg)"></div>
             <div class="swiper-slide" style="background-image:url(img/3.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(img/4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/4.JPG)"></div>
         </div>
     </div>
 
     <div class="overlay"></div>
-
+    n
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -131,51 +133,51 @@
     <script src="js/main.js"></script>
     <script>
         //swiper
-  var autoplay = 5000;
+        var autoplay = 5000;
 
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-  slidesPerView: 'auto',
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      touchRatio: 1,
-    },
-    // when window width is >= 640px
-    960: {
-      touchRatio: 0,
-    }
-  }
-});
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            slidesPerView: 'auto',
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    touchRatio: 1,
+                },
+                // when window width is >= 640px
+                960: {
+                    touchRatio: 0,
+                }
+            }
+        });
 
-var galleryTop = new Swiper('.gallery-top', {
-  effect: 'fade',
-  controller: {
-    control: galleryThumbs
-  },
-  thumbs: {
-    swiper: galleryThumbs,
-  },
-  autoplay: {
-    delay: autoplay,
-    disableOnInteraction: false
-  },
-  on: {
-    init: function () {
-      $(".swiper-progress-bar").removeClass("animate");
-      $(".swiper-progress-bar").removeClass("active");
-      $(".swiper-progress-bar").eq(0).addClass("animate");
-      $(".swiper-progress-bar").eq(0).addClass("active");
-    },
-    slideChangeTransitionStart: function () {
-      $(".swiper-progress-bar").removeClass("animate");
-      $(".swiper-progress-bar").removeClass("active");
-      $(".swiper-progress-bar").eq(0).addClass("active");
-    },
-    slideChangeTransitionEnd: function () {
-      $(".swiper-progress-bar").eq(0).addClass("animate");
-    }
-  }
-});
+        var galleryTop = new Swiper('.gallery-top', {
+            effect: 'fade',
+            controller: {
+                control: galleryThumbs
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+            autoplay: {
+                delay: autoplay,
+                disableOnInteraction: false
+            },
+            on: {
+                init: function() {
+                    $(".swiper-progress-bar").removeClass("animate");
+                    $(".swiper-progress-bar").removeClass("active");
+                    $(".swiper-progress-bar").eq(0).addClass("animate");
+                    $(".swiper-progress-bar").eq(0).addClass("active");
+                },
+                slideChangeTransitionStart: function() {
+                    $(".swiper-progress-bar").removeClass("animate");
+                    $(".swiper-progress-bar").removeClass("active");
+                    $(".swiper-progress-bar").eq(0).addClass("active");
+                },
+                slideChangeTransitionEnd: function() {
+                    $(".swiper-progress-bar").eq(0).addClass("animate");
+                }
+            }
+        });
     </script>
 
 
