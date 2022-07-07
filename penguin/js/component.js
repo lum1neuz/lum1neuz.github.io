@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function (e) {
+document.addEventListener("DOMContentLoaded", function(e) {
     document.body.className = '';
-  });
+});
 
 
 
@@ -24,6 +24,7 @@ class HeaderComponent extends HTMLElement {
                     <a class="nav-link" href="contact.html">Холбоо барих</a>
                     <nav class="nav-footer d-inline-flex align-self-center justify-content-center d-xl-none d-lg-none mx-auto flex-wrap flex-row">
                         <a target="_blank" href="https://www.facebook.com/Penguin-Agency-1509929059291912">facebook</i></a>
+                        <a href="#">instagram</i></a>
                     </nav>
                 </nav>
 
@@ -78,7 +79,7 @@ class FooterComponent extends HTMLElement {
               </svg>
                         </div>
                         <div class="col-9">
-                            <p class="small mb-1">+976 8811 8385</p>
+                            <p class="small mb-1">+976 8811 8385</p>    
                             <p class="small m-0">+976 8806 8385</p>
                         </div>
                     </div>
@@ -93,7 +94,7 @@ class FooterComponent extends HTMLElement {
 window.customElements.define('footer-component', FooterComponent);
 
 
-$('.collapse-button').click(function () {
+$('.collapse-button').click(function() {
     $(this).toggleClass('open');
     $('header').toggleClass('open', 200, "swing");
-  });
+});
