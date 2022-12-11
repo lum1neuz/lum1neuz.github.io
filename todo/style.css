@@ -28,4 +28,8 @@ body {
   right: 0.4em;
 }
 
+.checked {
+  text-decoration: line-through;
+}
+
 /*# sourceMappingURL=style.css.map */
