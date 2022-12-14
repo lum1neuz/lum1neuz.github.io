@@ -1,6 +1,5 @@
 let todoItems = [];
 
-
 function renderTodo(todo){
     localStorage.setItem('todoItemsRef', JSON.stringify(todoItems));
     const list = document.querySelector('.list');
@@ -94,7 +93,6 @@ const text = input.value.trim();
     input.value = '';
 }};
 
-
 const list = document.querySelector('.list');
 list.addEventListener('click', event => {
   if (event.target.classList.contains('form-check-input')) {
@@ -104,7 +102,6 @@ list.addEventListener('click', event => {
 
   if (event.target.classList.contains('delete-todo')) {
     const itemKey = event.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.dataset.key;
-
     deleteTodo(itemKey);
   }
 });
