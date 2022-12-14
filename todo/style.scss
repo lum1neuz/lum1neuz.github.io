@@ -26,5 +26,21 @@ body {
 }
 
 .checked {
+	opacity: 50%;
 	text-decoration: line-through;
 }
+
+.empty-state {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: none;
+  }
+
+  .list:empty {
+	display: none;
+  }
+
+  .list:empty + .empty-state {
+	display: flex;
+  }
