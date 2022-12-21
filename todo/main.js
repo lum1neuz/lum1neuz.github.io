@@ -8,7 +8,7 @@ function renderTodo(todo){
     if (todo.deleted) {
       item.remove();
       if (todoItems.length === 0) list.innerHTML = '';
-      return
+      return;
     }
 
     const isChecked = todo.checked ? 'done': '';
@@ -22,7 +22,7 @@ function renderTodo(todo){
             <li class="list-group-item">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                    <label class="form-check-label a${todo.id}" for="flexCheckDefault">
+                    <label class="form-check-label id${todo.id} disabled" for="flexCheckDefault">
                         ${todo.text}
                     </label>
                 </div>
@@ -65,7 +65,7 @@ function toggleDone(key) {
   todoItems[index].checked = !todoItems[index].checked;
 
 
-  const label = document.querySelector(".a"+todoItems[index].id);
+  const label = document.querySelector(".id"+todoItems[index].id);
 
   if (todoItems[index].checked == true) {
     label.classList.add('checked');
@@ -84,6 +84,12 @@ function deleteTodo(key) {
   renderTodo(todo);
 }
 
+function updateTodo(key) {
+  const index = todoItems.findIndex(item => item.id === Number(key));
+  
+}
+
+
 document.getElementById('button_submit').onclick = function(e) {
     const input = document.getElementById("input");
 
@@ -94,9 +100,12 @@ const text = input.value.trim();
 }};
 
 const list = document.querySelector('.list');
+
 list.addEventListener('click', event => {
+  
   if (event.target.classList.contains('form-check-input')) {
     const itemKey = event.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.dataset.key;
+    console.log(itemKey);
     toggleDone(itemKey);
   }
 
