@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+	<head>
+
+		<title>Discover Mongolia</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="assets/css/slide.css" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="assets/js/jquery-1.16.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="assets/js/supersized.min.js"></script>
+		<script type="text/javascript" src="assets/js/supersized.shutter.min.js"></script>
+		<script type="text/javascript" src="assets/js/amplitude.min.js"></script>
+
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slideshow               :   1,			// Slideshow on/off
+					autoplay				:	1,			// Slideshow starts playing automatically
+					start_slide             :   1,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	1,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   5000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	1000,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   1,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   1,			// Portrait images will not exceed browser height
+					fit_landscape			:   0,			// Landscape images will not exceed browser width
+															   
+					// Components							
+					slide_links				:	'false',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	1,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+														{image : 'images/slide/2.jpg',},
+														{image : 'images/slide/1.jpg',},
+														{image : 'images/slide/3.jpg',},
+														{image : 'images/slide/4.jpg',},
+														{image : 'images/slide/5.jpg',},
+														{image : 'images/slide/6.jpg',},
+														{image : 'images/slide/7.jpg',},
+														{image : 'images/slide/8.jpg',},
+														{image : 'images/slide/9.jpg',},
+														{image : 'images/slide/10.jpg',},
+														{image : 'images/slide/11.jpg',},
+														{image : 'images/slide/12.jpg',},
+														{image : 'images/slide/13.jpg',},
+														{image : 'images/slide/14.jpg',},
+														{image : 'images/slide/15.jpg',},
+														{image : 'images/slide/16.jpg',},
+														{image : 'images/slide/17.jpg',},
+														{image : 'images/slide/18.jpg',},
+														{image : 'images/slide/19.jpg',},
+														{image : 'images/slide/20.jpg',}							
+												],
+												
+					// Theme Options			   
+					progress_bar			:	1,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+	
+	<style type="text/css">
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url("../images/top-nav-bg.jpg"); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+	</style>
+
+<body>
+<div class="app-top">
+   
+       <div class="top-nav-content">
+  		<div class="containerplayer">
+			<div id="small-player-middle-controls">
+				<div class="amplitude-play-pause amplitude-paused" amplitude-main-play-pause="true" id="middle-top-play-pause"></div>
+				<div class="amplitude-mute"></div>
+				<input type="range" class="amplitude-volume-slider" value="0.1"/>
+			</div>
+			</div>
+
+        <div class="discover-logo"></div>
+      <h2 id="close-btn" class="closebtn"><span>Close App</span></h2>
+    </div>
+	    <script type="text/javascript">
+	    Amplitude.init({
+	        "songs": [
+	            {
+	                "name": "Song Name 1",
+	                "artist": "Artist Name",
+	                "album": "Album Name",
+	                "url": "/assets/audio/zarimdaa.mp3",
+	                "cover_art_url": "/cover/art/url.jpg"
+	            },
+	            {
+	                "name": "Song Name 2",
+	                "artist": "Artist Name",
+	                "album": "Album Name",
+	                "url": "/assets/audio/audio.mp3",
+	                "cover_art_url": "/cover/art/url.jpg"
+	            }
+	        ],
+	        "volume": .05,
+	        "autoplay": true
+	    });
+
+	</script>
+<script>
+
+    
+
+     var gui = require('nw.gui');
+    
+        $("#close-btn").click(function() {
+            gui.App.quit();
+        });
+</script>
+
+ </div>
+
+	
+	<!--End of styles-->
+<DIV class="skip-bt cl-effect-3"><a href="index.html"><b>SKIP</b></a></DIV>
+
+	<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+
+	
+	<!--Time Bar-->
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<a id="play-button"><img id="pauseplay" src="assets/images/slide/pause.png"/></a>
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+			
+		</div>
+	</div>
+
+</body>
+</html>

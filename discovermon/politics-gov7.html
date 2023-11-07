@@ -1,0 +1,80 @@
+<div class="app-header left textcenter politics-subhead">
+  <div class="container">
+    <a href="main.html" class="back"><span>Main Menu</span></a>
+    <p>Members of the Cabinet</p>
+  </div>
+</div>
+<div class="bottomnav textcenter">
+ <div class="container">  
+    <ul class="left">
+      <li><a href="politics-gov1.html">The Government</a></li>
+      <li><a href="politics-gov3.html">The Prime Minister</a></li>
+      <li><a href="politics-gov5.html">Members of the Cabinet</a></li>
+    </ul>
+    <ul class="navbut" style="float:right;">
+      <li><a href="javascript:history.back()" class="menubut">Back</a></li>
+      <li><a href="politics-gov8.html" class="menubut">Next</a></li>      
+    </ul>
+  </div><!--container-->
+</div>
+
+<div class="container">
+  <div class="content">
+
+  <div class="right"><a href="politics.html" class="menubut">Menu</a></div> 
+    <div class="row"><h2 class="textcenter uppercase">The Ministers</h2></div>
+    <div class="row">
+      <div class="smallspace"></div>
+        <div class="col-3">
+          <img class="fullimg" src="images/gov/bolovsorol.jpg">
+          <medium class="textcenter">Minister for Education, Culture, Science and Sports of Mongolia<br><b>BATSUURI Jamiyansuren</b></medium>
+          <p class="small">Government Building III, Baga Toiruu-44<br>
+          Sukhbaatar District, Ulaanbaatar<br>Mongolia<br>Phone: 1800-1209<br>Fax: +976-11-323158<br><span class="bold hover meds">http://meds.gov.mn</span></p>
+        </div>
+        <div class="col-3">
+          <img class="fullimg" src="images/gov/zamteever.jpg">
+          <medium class="textcenter">Minister for Road and Transport of Mongolia<br><b>GANBAT Dangaa</b></medium>
+          <p class="small">
+          Government Building XIII, Chinggis Avenue<br>Ulaanbaatar, Mongolia<br>Phone: (976-11) 62263170<br>Fax:(976-11) 312315<br><span class="mrt hover bold">http://mrt.gov.mn</span>
+              </p>
+        </div>
+        <div class="col-3">
+          <img class="fullimg" src="images/gov/uuluurhai.jpg">
+          <medium class="textcenter">Minister for Mining and Heavy Industry of Mongolia<br><b>DASHDORJ Tsedev</b></medium>
+          <p class="small">
+              Government Building II, United Nations Street 5/2<br>
+              Ulaanbaatar, Mongolia<br>
+              Phone: 51-263506, 51-264373<br>Fax: 11-318169<br><span class="mm hover bold">http://mi.gov.mn</span></p>
+        </div>
+
+       <div class="col-3">
+          <img class="fullimg" src="images/gov/hudulmur.jpg">
+          <medium class="textcenter">Minister for Labor and Social Protection of Mongolia<br><b>NOMTOIBAYAR Nyamtaishir</b></medium>
+          <p class="small">Government Building-IX<br>Peace avenue-16<br>Ulaanbaatar-210349, Mongolia<br><span class="mol hover bold">http://mol.gov.mn</span></p>
+
+              </p>
+        </div>
+    </div><!--row-->
+  </div><!--content-->
+</div><!--container -->
+<div class="largespace"></div>
+
+  <script src="../js/jquery.js"></script>
+  <script type="text/javascript">
+    var gui = require('nw.gui');
+    $(".mcud").click(function() {
+            window.gui.Shell.openExternal("http://mcud.gov.mn");
+        });
+    $(".meds").click(function() {
+            window.gui.Shell.openExternal("http://meds.gov.mn");
+        });
+    $(".mm").click(function() {
+            window.gui.Shell.openExternal("http://mm.gov.mn");
+        });
+    $(".mrt").click(function() {
+            window.gui.Shell.openExternal("http://mrt.gov.mn");
+        });
+    </script>
+
+</body>
+</html>
