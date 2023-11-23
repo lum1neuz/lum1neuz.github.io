@@ -244,9 +244,9 @@ p {
   color: #0e1133;
 }
 .appie-section-title .main-btn:hover {
-  background: #ff3e66;
+  background: #ff7f7e;
   color: #fff;
-  border-color: #ff3e66;
+  border-color: #ff7f7e;
 }
 .appie-section-title.appie-section-title-2 .appie-title {
   color: #fff;
@@ -272,7 +272,7 @@ p {
   color: #fff;
 }
 .back-to-top.back-to-top-2 a {
-  background: #ff3e66;
+  background: #ff7f7e;
 }
 .back-to-top.back-to-top-3 a {
   background: #ff6b58;
@@ -838,13 +838,13 @@ p {
   /* pages dropdown CSS */
 }
 .appie-header-area.appie-header-2-area .appie-btn-box .main-btn {
-  background: #ff3e66;
+  background: #ff7f7e;
   border-radius: 30px;
-  border-color: #ff3e66;
+  border-color: #ff7f7e;
 }
 .appie-header-area.appie-header-2-area .appie-btn-box .main-btn:hover {
   background: transparent;
-  color: #ff3e66;
+  color: #ff7f7e;
 }
 .appie-header-area .appie-header-main-menu ul li .mega-menu-main-wrap {
   width: 1170px;
@@ -2307,7 +2307,7 @@ p {
   height: 500px;
   width: 500px;
   transform: translate(-50%, -50%);
-  background: #ff3e66;
+  background: #ff7f7e;
   border-radius: 50%;
   z-index: -1;
 }
@@ -2409,7 +2409,7 @@ p {
 .appie-hero-content-2 > span {
   font-size: 16px;
   font-weight: 500;
-  color: #ff3e66;
+  color: #ff7f7e;
   position: relative;
 }
 .appie-hero-content-2 > span::before {
@@ -2485,7 +2485,7 @@ p {
   height: 60px;
   border-radius: 40px;
   border: 0;
-  border-left: 3px solid #ff3e66;
+  border-left: 3px solid #ff7f7e;
   padding-left: 55px;
   box-shadow: -3px 0px 0px 0px rgba(255, 62, 102, 0.004), 0px 30px 30px 0px rgba(14, 17, 51, 0.1);
 }
@@ -2501,7 +2501,7 @@ p {
   background: #fff;
   border-radius: 50%;
   border: 0;
-  color: #ff3e66;
+  color: #ff7f7e;
 }
 .appie-hero-content-2 .hero-users {
   display: flex;
@@ -2789,7 +2789,7 @@ p {
   margin-top: 23px;
 }
 .appie-single-service-2 a:hover {
-  color: #ff3e66;
+  color: #ff7f7e;
 }
 .appie-single-service-2:hover {
   box-shadow: 0px -3px 0px 0px rgba(234, 76, 137, 0.004), 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
@@ -3368,7 +3368,7 @@ p {
   top: 0;
   height: 30px;
   width: 30px;
-  background: #ff3e66;
+  background: #ff7f7e;
   border: 6px solid #2a182d;
   border-radius: 50%;
 }
@@ -3379,7 +3379,7 @@ p {
   margin-top: 3px;
 }
 .appie-features-box-item:hover {
-  border-color: #ff3e66;
+  border-color: #ff7f7e;
 }
 .appie-features-box-item.item-2 .title::before {
   background: #2eacfc;
@@ -3850,9 +3850,9 @@ p {
   cursor: poNunito;
 }
 .appie-testimonial-slider-2 .slick-arrow:hover {
-  background: #ff3e66;
+  background: #ff7f7e;
   color: #fff;
-  border-color: #ff3e66;
+  border-color: #ff7f7e;
 }
 .appie-testimonial-slider-2 .slick-arrow.prev {
   right: 60px;
@@ -4572,8 +4572,8 @@ p {
   border-radius: 30px;
 }
 .pricing-one__single.pricing-one__single_2 .pricig-body .pricing-btn a:hover {
-  background: #ff3e66;
-  border-color: #ff3e66;
+  background: #ff7f7e;
+  border-color: #ff7f7e;
 }
 .pricing-one__single.pricing-one__single_2 .pricig-body .pricing-rebon {
   right: 0;
@@ -4585,12 +4585,12 @@ p {
   box-shadow: none;
 }
 .pricing-one__single.pricing-one__single_2.active {
-  border-top: 3px solid #ff3e66;
+  border-top: 3px solid #ff7f7e;
   box-shadow: 0px -3px 0px 0px rgba(255, 62, 102, 0.004), 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
 }
 .pricing-one__single.pricing-one__single_2.active .pricig-body .pricing-btn a {
-  background: #ff3e66;
-  border-color: #ff3e66;
+  background: #ff7f7e;
+  border-color: #ff7f7e;
   color: #fff;
 }
 .pricing-one__single.pricing-one__single_2.item-2 .pricig-body ul li i {
@@ -4599,7 +4599,7 @@ p {
 }
 .pricing-one__single.pricing-one__single_2:hover {
   border-color: #fff;
-  border-top: 3px solid #ff3e66;
+  border-top: 3px solid #ff7f7e;
   transform: translateY(-10px);
 }
 .pricing-one__single.pricing-style-2 {
@@ -4686,7 +4686,7 @@ p {
 }
 .appie-pricing-2-area .appie-section-title .nav li a.active {
   color: #fff;
-  background: #ff3e66;
+  background: #ff7f7e;
 }
 
 .appie-pricing-6-area .pricing-one__single .pricing-rebon span {
@@ -6365,7 +6365,7 @@ blockquote cite {
   color: #fff;
 }
 .footer-about-widget.footer-about-widget-2 ul li a:hover {
-  background: #ff3e66;
+  background: #ff7f7e;
 }
 .footer-about-widget.footer-about-widget-3 ul li a:hover {
   background: #ff6b58;
@@ -6405,7 +6405,7 @@ blockquote cite {
   color: #2b70fa;
 }
 .footer-navigation.footer-navigation-2 ul li a:hover {
-  color: #ff3e66;
+  color: #ff7f7e;
 }
 .footer-navigation.footer-navigation-3 ul li a:hover {
   color: #ff6b58;
@@ -6783,7 +6783,7 @@ blockquote cite {
 .appie-about-content span {
   font-size: 14px;
   font-weight: 500;
-  color: #ff3e66;
+  color: #ff7f7e;
 }
 .appie-about-content .title {
   font-size: 44px;
@@ -7418,9 +7418,9 @@ blockquote cite {
   cursor: poNunito;
 }
 .appie-video-player-slider .slick-arrow:hover {
-  background: #ff3e66;
+  background: #ff7f7e;
   color: #fff;
-  border-color: #ff3e66;
+  border-color: #ff7f7e;
 }
 .appie-video-player-slider .slick-arrow.prev {
   right: 60px;
@@ -7461,7 +7461,7 @@ blockquote cite {
   background: #fff;
   text-align: center;
   line-height: 90px;
-  color: #ff3e66;
+  color: #ff7f7e;
   border-radius: 50%;
   font-size: 20px;
   position: relative;
@@ -7514,7 +7514,7 @@ blockquote cite {
   margin-top: 33px;
 }
 .appie-video-player-item .content a:hover {
-  background: #ff3e66;
+  background: #ff7f7e;
   border-color: #fff;
   color: #fff;
 }
@@ -7649,7 +7649,7 @@ blockquote cite {
 .appie-download-content > span {
   font-size: 14px;
   font-weight: 500;
-  color: #ff3e66;
+  color: #ff7f7e;
 }
 .appie-download-content .title {
   font-size: 44px;
