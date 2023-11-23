@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Discover Mongolia</title>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/mejs.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/pjax.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+  </head>
+  <body>
+ <div id="app-top-bar"></div>
+ <div id="main" class="home-body"></div>
+
+   <script>
+ // jQuery
+$.getScript('assets/js/app.js', function()
+{
+});
+
+$(document).pjax('a', '#main');
+$(document).on("pjax:click", "a.external", false)
+
+$(document).on('click', function(e) { 
+   if( e.which == 2 ) {
+      e.preventDefault();
+   }
+});
+</script>
+  </body>
+
+</html>

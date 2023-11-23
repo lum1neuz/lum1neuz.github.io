@@ -1,0 +1,49 @@
+<div class="app-top">
+   
+       <div class="top-nav-content">
+  
+<div class="containerplayer">
+      <div id="small-player-middle-controls">
+        <div class="amplitude-play-pause amplitude-paused" amplitude-main-play-pause="true" id="middle-top-play-pause"></div>
+        <div class="amplitude-mute"></div>
+        <input type="range" class="amplitude-volume-slider" value="0.1"/>
+      </div>
+    </div>
+
+        <div class="discover-logo"></div>
+      <h2 id="close-btn" class="closebtn"><span>Close App</span></h2>
+    </div>
+<script type="text/javascript" src="assets/js/amplitude.min.js"></script>
+<script>
+      Amplitude.init({
+          "songs": [
+              {
+                  "name": "Song Name 1",
+                  "artist": "Artist Name",
+                  "album": "Album Name",
+                  "url": "/assets/audio/zarimdaa.mp3",
+                  "cover_art_url": "/cover/art/url.jpg"
+              },
+              {
+                  "name": "Song Name 2",
+                  "artist": "Artist Name",
+                  "album": "Album Name",
+                  "url": "/assets/audio/audio.mp3",
+                  "cover_art_url": "/cover/art/url.jpg"
+              }
+          ],
+          "volume": .4,
+          "autoplay": true
+      });
+
+
+     var gui = require('nw.gui');
+    
+      $(document).ready(function() {
+        $("#close-btn").click(function() {
+            gui.App.quit();
+        });
+    });
+</script>
+
+ </div>

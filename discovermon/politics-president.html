@@ -1,0 +1,67 @@
+<div class="app-header left textcenter politics-subhead">
+  <div class="container">
+    <a href="main.html" class="back"><span>Main Menu</span></a>
+    <p>The President</p>
+  </div>
+</div>
+
+
+<div class="bottomnav textcenter">
+ <div class="container">  
+    <ul class="left">
+      <li><a class="bt bt-president">The President</a></li>
+      <li><a class="bt bt-pres-office">The Office of the President</a></li>
+      <li><a class="bt bt-pres-advisors">Advisors of the President</a></li>
+    </ul>
+    <ul class="navbut" style="float:right;">
+      <li><a class="menubut bt-next bt">Next</a></li>
+    </ul>
+  </div><!--container-->
+</div>
+
+<div class="container">
+  <div class="content">
+
+  <div class="right"><div class="menubut bt bt-menu">Menu</div></div> 
+
+
+  <script>
+  $( ".bt-menu" ).click(function() {
+  $("#main").load("politics.html");
+});
+$( ".bt-president" ).click(function() {
+  $("#main").load("politics-president.html");
+});
+$( ".bt-pres-office" ).click(function() {
+  $("#main").load("politics-president-office1.html");
+});
+$( ".bt-pres-advisors" ).click(function() {
+  $("#main").load("politics-president-advisors1.html");
+});
+$( ".bt-next" ).click(function() {
+  $("#main").load("politics-president2.html");
+});
+
+  </script>
+   
+    <div class="row">
+      <div class="col-2 center textcenter">
+        <div class="midspace"></div>
+        <img style="border:1px solid black" src="images/president.jpg"></br>
+        <medium>President of the Mongolia</br>
+        <strong><span style="text-transform:uppercase;">Elbegdorj</span> Tsakhia</strong></medium>
+      </div>
+      <div class="col-9">
+        <h2 class="textcenter">PRESIDENT OF MONGOLIA</h2>
+        <p>
+  &emsp;The Constitution of Mongolia declares that the President is Head of State, symbolising and representing the unity of the Mongolian people.
+  The President of Mongolia is elected by nationwide, equal, direct and secret ballot. Political parties, which have obtained seats in the State Great Khural, nominate individually or collectively presidential candidates, with one candidate per party or coalition of parties. The President shall only be eligible for re-election once.</br>
+  &emsp;The President is also the Commander-in-Chief of the Armed Forces of Mongolia. He heads the National Security Council of the country.
+  In the temporary absence of the President, his powers are exercised by the Chairman of the State Great Khural.
+  A two-thirds majority of the Parliament may remove the President for violation of the constitution or an abuse of power in breach of the presidential oath.
+  The President's prerogative consists of wholly or partially vetoing laws and other decisions adopted by the State Great Khural; proposing to the State Great Khural the name of a candidate for appointment to the post of Prime Minister in consultation with the majority party or parties in the State Great Khural if none of them has obtained a majority, representing the Mongolian State in foreign relations; concluding international treaties on behalf of Mongolia; appointing and recalling heads of plenipotentiary missions to foreign countries in consultation with the State Great Khural; conferring State titles and higher military ranks and award orders and medals; granting pardons; and declaring a state of emergency or martial law etc.,</p>
+      </div>
+    </div>
+  </div><!--content-->
+</div><!--container -->
+<div class="largespace"></div>
