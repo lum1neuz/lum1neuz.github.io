@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My CSS link here -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Google font here -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:800&display=swap" rel="stylesheet">
+
+    <title>Game Quiz</title>  
+</head>
+
+<body>
+    <div class="backGround">
+
+        <br>
+        <div class="container" style="visibility:hidden;" >
+
+        <div id="titleHolder" class="row">
+            <div class="col-md-1"></div>
+            <div id="triviaTitle" class="col-md-10">
+                <h1>Game Quiz</h1>
+                <h1 class="h12">?UIZ!</h1>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        </div>
+        
+        <div class="container">
+
+            <form id="questionForm">
+                <div class="row" id="firstRow">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h2 id="timer">Үлдсэн цаг: # Seconds</h2>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <br>
+                <div class="row" id="secondRow">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h3 id="question">Why is the sky so blue all the time?</h3>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <br>
+                <div class="row" id="thirdRow">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <button id="answerA" type="button" class="btn btn-outline-light btn-lg btn-block"></button>
+                        <button id="answerB" type="button" class="btn btn-outline-light btn-lg btn-block"></button>
+                        <button id="answerC" type="button" class="btn btn-outline-light btn-lg btn-block"></button>
+                        <button id="answerD" type="button" class="btn btn-outline-light btn-lg btn-block"></button>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </form>
+            <form id="counterForm">
+                <div class="row" id="questionsCorrect">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <p id="qCorrect">Зөв хариулсан:</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <br>
+                <div class="row" id="questionsWrong">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <p id="qWrong">Алдсан:</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <br>
+                <div class="row" id="questionsUnanswered">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <p id="qUnanswered">Хариулаагүй:</p>
+                    </div>
+                </div>
+            </form>
+            <button id="startButton" type="button" class="allButtons">Эхлэх</button>
+            <button id="resetButton" type="button" class="allButtons">Дахин эхлүүлэх</button>
+        </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- My Logic JavaScript link here -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+
+</body>
+
+</html>
