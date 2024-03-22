@@ -6,342 +6,101 @@ $(document).ready(function () {
     //Object that holds questions, answers, and correct answer:
 
     var allQuestions = [
-        {
-            "№": "1",
-            question: "Playstion 5 хэдэн сард гарсан бэ?",
-            correctAnswer: "2020 оны 11 сар",
-            answers: {
-                a: "2020 оны 4 сар",
-                b: "2020 оны 9 сар",
-                c: "2020 оны 11 сар",
-                d: "2020 оны 1 сар"
-            }
-        },
-        {
-            "№": "2",
-            question: "Хамгийн их борлуулагдаж байсан тоглоом?",
-            correctAnswer: "Minecraft",
-            answers: {
-                a: "Minecraft",
-                d: "GTA 5",
-                b: "Call of Duty: Modern Warfare",
-                c: "Witcher 3"
-            }
-        },
-        {
-            "№": "3",
-            question: "Хамгийн анхны видио тоглоом? ",
-            correctAnswer: "1958",
-            answers: {
-                a: "1982",
-                b: "1969",
-                c: "1945",
-                d: "1958"
-            }
-        },
-        {
-            "№": "4",
-            question: "2019 оны Dota 2 The International тэмцээний шагналын сан хэд хүрсэн бэ?",
-            correctAnswer: "34 сая $",
-            answers: {
-                a: "34 сая $",
-                b: "29 сая $",
-                d: "36 сая $",
-                c: "32 сая $"
-            }
-        },
-        {
-            "№": "5",
-            question: "Dota 2 нийт хэдэн баатартай вэ?",
-            correctAnswer: "123",
-            answers: {
-                a: "111",
-                c: "153",
-                b: "123",
-                d: "122"
-            }
-        },
-        {
-            "№": "6",
-            question: "Super Smash Bros хэдэн онд гарсан бэ?",
-            correctAnswer: "1999",
-            answers: {
-                a: "1990",
-                d: "1991",
-                b: "1983",
-                c: "1999"
-            }
-        },
-        {
-            "№": "7",
-            question: "Minecraft дээрх олборлож болдог хамгийн хатуу блок юу вэ?",
-            correctAnswer: "Obsidian",
-            answers: {
-                a: "Diamond Block",
-                b: "Obsidian",
-                c: "Ender Chest",
-                d: "Glass"
-            }
-        },
-        {
-            "№": "8",
-            question: "Хамгийн их үнэд хүрсэн видео тоглоом?",
-            correctAnswer: "Super Mario Bros.",
-            answers: {
-                a: "Atlantis II",
-                b: "GTA V",
-                c: "Super Mario Bros.",
-                d: "Red Sea Crossing"
-            }
-        },
-        {
-            "№": "9",
-            question: "Nintendo-гын хамгийн анхны гаргасан консол?",
-            correctAnswer: "EVR race",
-            answers: {
-                a: "EVR race",
-                b: "N64",
-                c: "SNES",
-                d: "NES"
-            }
-        },
-        {
-            "№": "10",
-            question: "Mario хамгийн анх ямар тоглоом дээр гарч байсан бэ? ",
-            correctAnswer: "Donkey Kong",
-            answers: {
-                a: "Super Mario 64",
-                b: "Donkey Kong",
-                c: "Super Mario Bros.",
-                d: "Paper Mario"
-            }
-        },
-        {
-            "№": "11",
-            question: "Анхны VR төхөөрөмж хэзээ гарж байсан бэ? ",
-            correctAnswer: "1995",
-            answers: {
-                a: "1995",
-                b: "1991",
-                c: "1992",
-                d: "1994"
-            }
-        },
-        {
-            "№": "12",
-            question: "Хамгийн их зарагдаж байсан консол аль нь вэ? ",
-            correctAnswer: "PlayStation 2",
-            answers: {
-                a: "XBOX 360",
-                b: "PlayStation 4",
-                c: "XBOX One",
-                d: "PlayStation 2"
-            }
-        },
-        {
-            "№": "13",
-            question: "Dota 2 хамгийн их skill-тэй баатар?",
-            correctAnswer: "Invoker",
-            answers: {
-                a: "Rubick",
-                b: "Lion",
-                c: "Leshrac",
-                d: "Invoker"
-            }
-        },
-
-        {
-            "№": "14",
-            question: "CS GO тоглоом дээр хэдэн буу байдаг вэ?",
-            correctAnswer: "34",
-            answers: {
-                a: "34",
-                d: "30",
-                b: "31",
-                c: "32"
-            }
-        },
-        {
-            "№": "15",
-            question: "Ямар улс шөнө дунд тоглоом тоглохыг хориглох гэж оролдсон бэ?",
-            correctAnswer: "Өмнөд Солонгос",
-            answers: {
-                a: "Хятад",
-                b: "Америк",
-                c: "Орос",
-                d: "Өмнөд Солонгос"
-            }
-        },
-        {
-            "№": "16",
-            question: "АНУ-ын аль ерөнхийлөгчөөс Fallout 3 тоглоомын ерөнхийлөгчийн дүрт дуу оруулхыг хүссэн (мөн татгалзсан) вэ?",
-            correctAnswer: "Bill Clinton",
-            answers: {
-                a: "Barack Obama",
-                b: "Donald Trump",
-                c: "Bill Clinton",
-                d: "George Bush"
-            }
-        },
-        {
-            "№": "17",
-            question: "Дотоод санах ойтой анхны тоглоомын консол юу байсан бэ?",
-            correctAnswer: "SEGA Saturn",
-            answers: {
-                a: "SEGA Saturn",
-                b: "PlayStation",
-                c: "Nintendo Gameboy",
-                d: "Nintendo 64"
-            }
-        },
-        {
-            "№": "18",
-            question: "Хамгийн анхны Mortal Kombat хэдэн онд гарсан бэ?",
-            correctAnswer: "1992",
-            answers: {
-                a: "1993",
-                b: "1991",
-                c: "1992",
-                d: "1990"
-            }
-        },
-        {
-            "№": "19",
-            question: "GTA Vice City тоглоомын гол дүрийн нэр?",
-            correctAnswer: "Tommy Vercetti",
-            answers: {
-                a: "Carl Johnson",
-                b: "Micheal De Santa",
-                c: "Tommy Vercetti",
-                d: "Claude"
-            }
-        },
-        {
-            "№": "20",
-            question: "Видео тоглоомоос сэдэвлэсэн хамгийн их ашиг олсон кино юу вэ?",
-            correctAnswer: "Detective Pikachu",
-            answers: {
-                a: "Detective Pikachu",
-                b: "Warcraft",
-                c: "Assassin's Creed",
-                d: "Tomb Raider"
-            }
-        },
-        {
-            "№": "21",
-            question: "'Doom' тоглоомыг бүтээхэд ямар киноны франчайз нөлөөлсөн бэ?",
-            correctAnswer: "Aliens",
-            answers: {
-                a: "Dawn of the Dead",
-                b: "Star Wars",
-                c: "Aliens",
-                d: "The Thing"
-            }
-        },
-        {
-            "№": "22",
-            question: "Playstation анх хаана үйлдвэрлэгдсэн бэ?",
-            correctAnswer: "Япон",
-            answers: {
-                a: "Америк",
-                b: "Хятад",
-                c: "Орос",
-                d: "Япон"
-            }
-        },
-        {
-            "№": "23",
-            question: "Half Life тоглоомын гол дүр?",
-            correctAnswer: "Gordon Freeman",
-            answers: {
-                a: "Gordon Freeman",
-                b: "Alyx Vance",
-                c: "Geralt of Rivia",
-                d: "Carl Johnson"
-            }
-        },
-        {
-            "№": "24",
-            question: "Анхны нислэгийн симулятор тоглоомыг хэн гаргасан бэ?",
-            correctAnswer: "Microsoft",
-            answers: {
-                a: "Sony",
-                b: "Nintendo",
-                c: "Microsoft",
-                d: "SEGA"
-            }
-        },
-        {
-            "№": "25",
-            question: "Halo-ийн Master Chief-ийн нэр ?",
-            correctAnswer: "John",
-            answers: {
-                a: "John",
-                b: "Tom",
-                c: "Bob",
-                d: "Ralph"
-            }
-        },
-        {
-            "№": "26",
-            question: "Metal Gear Series-ийг бүтээсэн хүний нэр хэн бэ?",
-            correctAnswer: "Hideo Kojima",
-            answers: {
-                a: "Hidetaka Miyazaki",
-                b: "Shigeru Miyamoto",
-                c: "Hideo Kojima",
-                d: "Masahiro Sakurai"
-            }
-        },
-        {
-            "№": "27",
-            question: "Elder Scrolls цуврал дээр гүрвэлэн хүмүүсийн төрлийг юу гэдэг вэ?",
-            correctAnswer: "Argonian",
-            answers: {
-                a: "Redguard",
-                b: "Argonian",
-                c: "Nord",
-                d: "Khajiit"
-            }
-        },
-        {
-            "№": "28",
-            question: "Эндээс хамгийн бага үнэлгээтэй Call of Duty аль нь вэ?",
-            correctAnswer: "Call of Duty: Ghosts",
-            answers: {
-                a: "Call of Duty: Modern Warfare 3",
-                b: "Call of Duty: Infinte Warfare",
-                c: "Call of Duty: Ghosts",
-                d: "Call of Duty: Advanced Warfare"
-            }
-        },
-        {
-            "№": "29",
-            question: "Call of Duty цуврал хэдэн оноос эхэлж жил болгон гардаг болсон бэ?",
-            correctAnswer: "2005",
-            answers: {
-                a: "2005",
-                b: "2004",
-                c: "2006",
-                d: "2007"
-            }
-        },
-        {
-            "№": "30",
-            question: "Half-Life тоглоомыг бүтээгч хэн бэ?",
-            correctAnswer: "Gabe Newell",
-            answers: {
-                a: "Hideo Kojima",
-                b: "John Romero",
-                c: "John Cormack",
-                d: "Gabe Newell"
-            }
-        },
-
-        
-
-        
-    ]
+{ "№": 1, "question": "Тогтмол өгөөжтэй үнэт цаас авахдаа юуг харгалзаж үзэх хэрэгтэй вэ?", "correctAnswer": "Үнэт цаасны үнийн хэлбэлзэл", "answers": { "a": "Хугацааны эцэс дэх өгөөжийн хувь", "b": "Дампуурлын буюу мөнгөө алдах эрсдэл", "c": " Үнэт цаасны хөрвөх чадвар", "d": "" } },
+{ "№": 1, "question": "Хөрөнгийн зах зээлд ямар эдийн засгийн үзүүлэлт нөлөөлөхгүй вэ?", "correctAnswer": "Валютын ханш", "answers": { "a": " ДНБ өсөлт", "b": " Мөнгөний болон төсвийн бодлого", "c": "Инфляцын түвшин", "d": "" } },
+{ "№": 1, "question": "Хувьцааны суурь шинжилгээнд аль нь орохгүй вэ?", "correctAnswer": "Хөрвөх чадварын судалгаа", "answers": { "a": "Эдийн засгийн судалгаа", "b": " Салбарын судалгаа", "c": " Компанийн судалгаа", "d": "" } },
+{ "№": 1, "question": " Дауны онол буюу Dow’s theory-ийг хэн зохиосон бэ?", "correctAnswer": "Charles H. Dow", "answers": { "a": " James B. Dow", "b": " Samuel L. Dow", "c": " William H. Dow", "d": "" } },
+{ "№": 1, "question": "Дауны онолд хэдэн үндсэн зарчимтай вэ?", "correctAnswer": "6", "answers": { "a": "5", "b": "8", "c": "9", "d": "" } },
+{ "№": 1, "question": "Дауны онолын гол хөдөлгөөнд аль нь орохгүй вэ?", "correctAnswer": "Том хөдөлгөөн (major movement)", "answers": { "a": "Анхдагч хөдөлгөөн (primary movement)", "b": " Хоёрдогч хөдөлгөөн (secondary movement)", "c": "Жижиг хөдөлгөөн (minor movement)", "d": "" } },
+{ "№": 1, "question": "Алтернатив хөрөнгө оруулалтад аль нь ордоггүй вэ?", "correctAnswer": " Бонд", "answers": { "a": " Venture capital", "b": " Үл хөдлөх хөрөнгө", "c": " Таваар, түүхий эдийн зах зээл", "d": "" } },
+{ "№": 1, "question": "Монголын хөрөнгийн бирж хэдэн онд байгуулагдсан бэ?", "correctAnswer": "1991", "answers": { "a": "1990", "b": "1995", "c": "1992", "d": "" } },
+{ "№": 1, "question": "Дэлхийд хамгийн анхны хөрөнгө оруулалтын сан хэдэн онд байгуулагдаж байсан бэ?", "correctAnswer": "1774", "answers": { "a": "1882", "b": "1634", "c": "1923", "d": "" } },
+{ "№": 1, "question": "Монголд хамгийн анхны хамтын хаалттай хөрөнгө оруулалтын сан хэдэн онд байгуулагдаж байсан бэ?", "correctAnswer": "2020", "answers": { "a": "2017", "b": "2021", "c": "2016", "d": "" } },
+{ "№": 1, "question": "Дэлхийд хамгийн анхны хөрөнгө оруулалтын сан аль улсад байгуулагдаж байсан бэ?", "correctAnswer": "Нидерланд", "answers": { "a": "Америк", "b": "Англи", "c": "Франц", "d": "" } },
+{ "№": 1, "question": "Системийн нөлөө бүхий 5 банканд аль нь орох вэ?", "correctAnswer": "Худалдаа хөгжлийн банк", "answers": { "a": "Ариг", "b": "Улаанбаатар", "c": "Богд", "d": "" } },
+{ "№": 1, "question": " Монголын анхны крипто форвард хэлцэл ямар койн дээр явагдсан бэ?", "correctAnswer": "Ард койн", "answers": { "a": "Их койн", "b": "DAXT", "c": "MNFT", "d": "" } },
+{ "№": 1, "question": "IPO нь ямар 3 үгний товчлол вэ?", "correctAnswer": "inclusive public offering", "answers": { "a": "initial public order", "b": "inclusive public offering", "c": "inclusive public offering", "d": "" } },
+{ "№": 1, "question": " Хөрөнгийн зах зээл дээрх хувьцааны ханшийн өсөлтийг юуны зах зээл гэдэг вэ?", "correctAnswer": "Бухын", "answers": { "a": " Бугын", "b": "Баавгайн", "c": "Могойн", "d": "" } },
+{ "№": 1, "question": "Nasdaq бирж хаана байдаг вэ?", "correctAnswer": "Нью-Йорк", "answers": { "a": "Москва", "b": " Лондон", "c": "Токио", "d": "" } },
+{ "№": 1, "question": "Монголын анхны Хамтын хөрөнгө оруулалтын сан (ХХОС)-ийн нэр?", "correctAnswer": "“Үндэсний хувьчлалын сан” ХХОС", "answers": { "a": "Мандал Ирээдүйн Өсөлт' ХХОС", "b": "“Ардын хөрөнгө оруулалтын сан” ХХОС", "c": "", "d": "" } },
+{ "№": 1, "question": "Этэриумын анхны Hard fork нь ямар нэртэй вэ?", "correctAnswer": "Homestead", "answers": { "a": "Byzantium", "b": "London", "c": "Bill Gates", "d": "" } },
+{ "№": 1, "question": "Биткойныг үүсгэн байгуулсан хүнийг хэн гэж үздэг бэ?", "correctAnswer": "Сатоши Накамото", "answers": { "a": "Франк Вилтнер", "b": "Билл Гэйтс", "c": "Виталик Бутерин", "d": "" } },
+{ "№": 1, "question": "Bitcoin.org домайн анх хэдэн онд бүртгэгдсэн бэ?", "correctAnswer": "2008", "answers": { "a": "2009", "b": "2010", "c": "2013", "d": "" } },
+{ "№": 1, "question": "USDT буюу Tether нь ямар төрлийн крипто хөрөнгөд ордог бэ?", "correctAnswer": "Stablecoin", "answers": { "a": "USDCoin", "b": "Blockchain Coin", "c": "Bill Gates Coin", "d": "" } },
+{ "№": 1, "question": "АрдКойн анх зах зээлд хэдэн төгрөгөөр гарч байсан бэ?", "correctAnswer": "1 төгрөг", "answers": { "a": "15 төгрөг", "b": "10 төгрөг", "c": "5 төгрөг", "d": "" } },
+{ "№": 1, "question": "АрдКойн зах зээлд хэдэн ширхэг гарсан бэ?", "correctAnswer": "5.1 тэрбум", "answers": { "a": "100 тэрбум", "b": "10 тэрбум", "c": "15 тэрбум", "d": "" } },
+{ "№": 1, "question": "Их хэмжээний Койн эзэмшдэг хүнийг юу гэж нэрлэдэг вэ?", "correctAnswer": "Whale", "answers": { "a": "Shark", "b": "Squid", "c": "Tail", "d": "" } },
+{ "№": 1, "question": "Хамгийн анхны криптовалют?", "correctAnswer": "Bitcoin", "answers": { "a": "Luna", "b": "Dogecoin", "c": "Ether", "d": "" } },
+{ "№": 1, "question": "Эдгээр орнуудын аль нь Bitcoin -ийн хамгийн том олборлогчдын нэг вэ?", "correctAnswer": "Хятад", "answers": { "a": "Франц", "b": "Балба", "c": "Алжир", "d": "" } },
+{ "№": 1, "question": "Этэриум технологи дээр суурилсан анхны тоглоомын нэр?", "correctAnswer": "CryptoKitties", "answers": { "a": "Cryptobox", "b": "Ethergame", "c": "Cryptomon", "d": "" } },
+{ "№": 1, "question": "Биткойны 0.00000001-тэй тэнцэх хамгийн бага нэгжийн нэр?", "correctAnswer": "Satoshi", "answers": { "a": "Minibit", "b": "Smalbit", "c": "Ethereum", "d": "" } },
+{ "№": 1, "question": "Биткойноос бусад койнуудыг ерөнхийлөн нэрлэдэг нэр?", "correctAnswer": "Altcoin", "answers": { "a": "Acoin", "b": "Money", "c": "Othercoin", "d": "" } },
+{ "№": 1, "question": "Санхүүгийн бүтээгдэхүүнийг төвлөрсөн бус блокчэйн сүлжээнд ашиглах боломжтой системийг нэрлэдэг?", "correctAnswer": "DeFi", "answers": { "a": "FinChain", "b": "Bona FiDe", "c": "DCFP (decentralized Financial Products)", "d": "" } },
+{ "№": 1, "question": "2018 онд аль байгууллага блокчэйнд суурилсан Бонд-I нэртэй бонд гаргасан бэ?", "correctAnswer": "Дэлхийн Банк", "answers": { "a": "Олон Улсын Валютын Сан", "b": "Европын Холбоо", "c": "Дэлхийн худалдааны байгууллага", "d": "" } },
+{ "№": 1, "question": "Хэрэв 1 BTC нь 100 сая Сатоши -тай тэнцүү бол 1 ETH нь 1 тэрбум _____ -тай тэнцүү вэ?", "correctAnswer": "Gwei", "answers": { "a": "Matic", "b": "Ethbits", "c": "Sols", "d": "" } },
+{ "№": 1, "question": "Хөл бөмбөгийн ямар тоглогч цалингаа хэсэгчлэн токеноор авдаг вэ?", "correctAnswer": "Lionel Messi", "answers": { "a": "Jack Grealish", "b": "Danny Ings", "c": "Jadon Sancho", "d": "" } },
+{ "№": 1, "question": "Хэрэглэгчид виртуал ертөнцөд газар авах, барих, зарах боломж олгодог Этэриумын блокчэйн дээр суурилсан төвлөрсөн бус 3D виртуал платформын нэр?", "correctAnswer": "Decentraland", "answers": { "a": "Minecraft", "b": "Runescape", "c": "Sims", "d": "" } },
+{ "№": 1, "question": "АрдКойны төрөлх бирж аль вэ?", "correctAnswer": "idax", "answers": { "a": "Trade", "b": "Coinhub", "c": "Complex", "d": "" } },
+{ "№": 1, "question": "Дэлхийн хамгийн идэвхтэй арилжаалагддаг криптовалют юу вэ?", "correctAnswer": "Tether", "answers": { "a": "Bitcoin", "b": "Ether", "c": "Dogecoin", "d": "" } },
+{ "№": 1, "question": "Хамгийн анх аль блокчэйн дээр ухаалаг гэрээг байгуулах боломжтой болсон бэ?", "correctAnswer": "Ethereum", "answers": { "a": "Cardano", "b": "Bitcoin", "c": "Matic", "d": "" } },
+{ "№": 1, "question": "Блокчэйн технологи анх ямар зорилготойгоор санаачлагдаж байсан бэ?", "correctAnswer": "Spam имэйл шалгах", "answers": { "a": "Хэрэглэгч бүртгэл", "b": "Цахим тооцоолол", "c": "Цасны хайлах хурдыг тодорхойлох", "d": "" } },
+{ "№": 1, "question": "NFT гэж юу гэсэн үгний товчлол вэ?", "correctAnswer": "Non-fungible token", "answers": { "a": "Non-fungeble token", "b": "No Further Text", "c": "Non-forgettable token", "d": "" } },
+{ "№": 1, "question": "Юуг NFT болгох боломжтой вэ", "correctAnswer": "Бүгд", "answers": { "a": "Биет хөрөнгө", "b": "Уран бүтээл", "c": "Оюуны өмч", "d": "" } },
+{ "№": 1, "question": "WEB 3.0 -д юу хамаарахгүй вэ", "correctAnswer": "Банкны систем", "answers": { "a": "Блокчэйн", "b": "Метаверс", "c": "NFT", "d": "" } },
+{ "№": 1, "question": "Дэлхийн хамгийн том NFT маркет аль нь вэ", "correctAnswer": "Opensea", "answers": { "a": "Rarible", "b": "Mintable", "c": "Foundation", "d": "" } },
+{ "№": 1, "question": "Аль музей NFT гаргаж байсан бэ", "correctAnswer": "Эрмитаж", "answers": { "a": "Монголын түүхийн музей", "b": "Луврын музей", "c": "Хятадын үндэсний төв музей", "d": "" } },
+{ "№": 1, "question": "NFT хэдэн онд хамгийн их арилжаалагдсан бэ", "correctAnswer": "2021", "answers": { "a": "2020", "b": "2014", "c": "2022", "d": "" } },
+{ "№": 1, "question": "Метамаск гэж юу вэ", "correctAnswer": "Крипто хэтэвч", "answers": { "a": "NFT маркет", "b": "Хөрөнгө оруулалтын компани", "c": "Хакерын бүлэг", "d": "" } },
+{ "№": 1, "question": "Монгол койнуудын нэгдсэн мэдээллийг хаанаас авч болох вэ ", "correctAnswer": "Krypto.mn", "answers": { "a": "Монгол биржүүдээс", "b": "Ikon", "c": "FB", "d": "" } },
+{ "№": 1, "question": "NFT хэзээ анх үүссэн бэ", "correctAnswer": "2014", "answers": { "a": "2021", "b": "2020", "c": "2019", "d": "" } },
+{ "№": 1, "question": "Сатоши накамото гэж хэн бэ", "correctAnswer": "Биткойныг анх зохиосон хүн", "answers": { "a": "NFT артист ", "b": "Хөрөнгө оруулагч", "c": "Хамгийн баян арилжаачин", "d": "" } },
+{ "№": 1, "question": "Монголын анхны NFT дуудлага худалдааг аль платформ дээр хийсэн бэ?", "correctAnswer": "Ardshop", "answers": { "a": "KFC", "b": "Shoppy", "c": "Krypto.mn", "d": "" } },
+{ "№": 1, "question": "NFT орших боломжгүй блокчэйн аль нь бэ?", "correctAnswer": "Bitcoin", "answers": { "a": "Ethereum", "b": "Stellar", "c": "Polygon", "d": "" } },
+{ "№": 1, "question": "Аль нь метаверс биш вэ", "correctAnswer": "Facebook (META)", "answers": { "a": "PUBG", "b": "Minecraft", "c": "Sandbox", "d": "" } },
+{ "№": 1, "question": "Зөвхөн гишүүддээ", "correctAnswer": "Зөвхөн гишүүддээ", "answers": { "a": "Иргэн", "b": "Хуулийн этгээд", "c": "Насанд хүрээгүй хүүхэд", "d": "Насанд хүрэгчдэд" } },
+{ "№": 1, "question": "Хадгаламж, Зээл", "correctAnswer": "Хадгаламж, Зээл", "answers": { "a": "Хадгаламж", "b": "Зээл", "c": "Үнэт цасны арилжаа", "d": "Бүгд зөв" } },
+{ "№": 1, "question": "Санхүүгийн зохицуулах хороо", "correctAnswer": "Санхүүгийн зохицуулах хороо", "answers": { "a": "Монголбанк", "b": "Банк бус санхүүгийн байгууллага", "c": "Банкууд", "d": "Бүгд зөв" } },
+{ "№": 1, "question": "20 үүсгэн байгуулагч", "correctAnswer": "20 үүсгэн байгуулагч", "answers": { "a": "15 үүсгэн байгуулагч", "b": "10 үүсгэн байгуулагч", "c": "5 үүсгэн байгуулагч", "d": "Бүгд зөв" } },
+{ "№": 1, "question": "25%", "correctAnswer": "25%", "answers": { "a": "5%", "b": "10%", "c": "15%", "d": "20%" } },
+{ "№": 1, "question": "30 хоногийн өмнө", "correctAnswer": "30 хоногийн өмнө", "answers": { "a": "2 сарын өмнө", "b": "14 хоногийн өмнө", "c": "7 хоногийн өмнө", "d": "Хурлын өмнө" } },
+{ "№": 1, "question": "10 сарын 31", "correctAnswer": "10 сарын 31", "answers": { "a": "10 сарын 29", "b": "10 сарын 30", "c": "10 сарын 28", "d": "10 сарын 27" } },
+{ "№": 1, "question": "20 сая", "correctAnswer": "20 сая", "answers": { "a": "100 сая", "b": "50 сая", "c": "80 сая", "d": "30 сая" } },
+{ "№": 1, "question": "Сар бүр өмнөх сарын үлдэгдлээс хүү тооцдог", "correctAnswer": "Сар бүр өмнөх сарын үлдэгдлээс хүү тооцдог", "answers": { "a": "Сар бүр өмнөх сарын хадгаламжинд хийсэн орлогоос хүү тооцдог", "b": "Жилийн эцэст нэг удаа хадгаламжийн үлдэгдлээс хүү тооцдог", "c": "Жилийн эцэст нэг удаа хадгаламж нээсэн дүнгээс хүү тооцдог", "d": "Сар бүр хадгаламж нээсэн эхний дүнгээс хүү тооцдог" } },
+{ "№": 1, "question": "Дээд дүн байхгүй", "correctAnswer": "Дээд дүн байхгүй", "answers": { "a": "20 сая", "b": "5 сая", "c": "100 сая", "d": "Орлого хийх боломжгүй" } },
+{ "№": 1, "question": "Бүх гишүүдийн хурал", "correctAnswer": "Бүх гишүүдийн хурал", "answers": { "a": "Тэргүүлэгчдийн зөвлөл", "b": "Зээлийн хороо", "c": "Хяналтын зөвлөл", "d": "Санхүүгийн зохицуулах хороо" } },
+{ "№": 1, "question": "2", "correctAnswer": "2", "answers": { "a": "5", "b": "15", "c": "1", "d": "10" } },
+{ "№": 1, "question": "Монголбанк", "correctAnswer": "Монголбанк", "answers": { "a": "Улсын Их Хурал", "b": "Засгийн газар", "c": "Ерөнхийлөгч", "d": "Ерөнхий сайд" } },
+{ "№": 1, "question": "Mastercard", "correctAnswer": "Mastercard", "answers": { "a": "Western Union", "b": "MoneyGram", "c": "Ria", "d": "Eurogiro" } },
+{ "№": 1, "question": "ББСБ-ийн өөрийн хөрөнгийн 80%-аас хэтрэхгүй", "correctAnswer": "ББСБ-ийн өөрийн хөрөнгийн 80%-аас хэтрэхгүй", "answers": { "a": "Үгүй", "b": "ББСБ-ийн өөрийн хөрөнгийн хэмжээнээс хэтрэхгүй", "c": "ББСБ-ийн нийт хөрөнгийн хэмжээнээс хэтрэхгүй", "d": "ББСБ-ийн нийт хөрөнгийн 80%-аас хэтрэхгүй" } },
+{ "№": 1, "question": "Монголбанк", "correctAnswer": "Монголбанк", "answers": { "a": "Санхүүгийн Зохицуулах Хороо", "b": "Мэргэжлийн Хяналтын Газар", "c": "Сангийн Яам", "d": "Шударга Өрсөлдөөн Хэрэглэгчийн Төлөө Газар" } },
+{ "№": 1, "question": "1998", "correctAnswer": "1998", "answers": { "a": "1999", "b": "2000", "c": "2001", "d": "1997" } },
+{ "№": 1, "question": "Ирээдүйд учирч болох эрсдэлээс хамгаалах санхүүгийн арга хэрэгсэл ", "correctAnswer": "Ирээдүйд учирч болох эрсдэлээс хамгаалах санхүүгийн арга хэрэгсэл ", "answers": { "a": "Ашиг олох арга хэрэгсэл ", "b": "Даатгагч, даатгуулагчийн хооронд үүсэх даатгалын харилцааг зохицуулсан эрх зүйн баримт бичиг", "c": "Гэрээний дагуу даатгалын тохиолдол үүссэн нөхцөлд даатгагчаас даатгуулагчид олгох мөнгөн хөрөнгө", "d": "" } },
+{ "№": 1, "question": "Эрсдэлээс сэргийлэх ", "correctAnswer": "Эрсдэлээс сэргийлэх ", "answers": { "a": "Мөнгөө өсгөх ", "b": "Орлого олох ", "c": "", "d": "" } },
+{ "№": 1, "question": "Жолоочийн хариуцлагын албан журмын даатгал ", "correctAnswer": "Жолоочийн хариуцлагын албан журмын даатгал ", "answers": { "a": "Тээврийн хэрэгслийн даатгал ", "b": "Эрүүл мэндийн даатгал ", "c": "Хөрөнгийн даатгал ", "d": "" } },
+{ "№": 1, "question": "Нөхөн төлбөр ", "correctAnswer": "Нөхөн төлбөр ", "answers": { "a": "Эрсдэлийн төлбөр ", "b": "Хөнгөлөлтийн төлбөр ", "c": "Даатгалын хураамж ", "d": "Буцаалт " } },
+{ "№": 1, "question": "1994", "correctAnswer": "1994", "answers": { "a": "1992", "b": "1996", "c": "2004", "d": "2018" } },
+{ "№": 1, "question": "Ердийн болон урт хугацааны ", "correctAnswer": "Ердийн болон урт хугацааны ", "answers": { "a": "Энгийн болон давхар ", "b": "Ердийн болон давхар ", "c": "Албан журмын болон сайн дурын ", "d": "Дан болон давхар " } },
+{ "№": 1, "question": "Автомашин тус бүр дээр хийлгэнэ", "correctAnswer": "Автомашин тус бүр дээр хийлгэнэ", "answers": { "a": "Дунд нь нэг л даатгал хийлгэнэ ", "b": "Хоёр автомашин дээрээ даатгал хийлгэнэ ", "c": "Жолоочийн үнэмлэхтэй байхад л болно ", "d": "" } },
+{ "№": 1, "question": "Давхар даатгалын компанид ", "correctAnswer": "Давхар даатгалын компанид ", "answers": { "a": "Бусад даатгалын компанидаа ", "b": "Санхүүгийн зохицуулах хороонд ", "c": "Сангийн яаманд ", "d": "Даатгалын Холбоонд " } },
+{ "№": 1, "question": "55", "correctAnswer": "55", "answers": { "a": "50", "b": "60", "c": "52", "d": "53" } },
+{ "№": 1, "question": "60", "correctAnswer": "60", "answers": { "a": "50", "b": "55", "c": "58", "d": "65" } },
+{ "№": 1, "question": "1994 он", "correctAnswer": "1994 он", "answers": { "a": "2004 он", "b": "2009 он ", "c": "1963 он ", "d": "1986 он" } },
+{ "№": 1, "question": "Өвлөгдөггүй", "correctAnswer": "Өвлөгдөггүй", "answers": { "a": "Өвлөгддөг", "b": "", "c": "", "d": "" } },
+{ "№": 1, "question": "Нидерланд ", "correctAnswer": "Нидерланд ", "answers": { "a": "Дани ", "b": "Финланд", "c": "Швед", "d": "Норвеги" } },
+{ "№": 1, "question": "Нидерланд ", "correctAnswer": "Нидерланд ", "answers": { "a": "Дани ", "b": "Финланд", "c": "Швед", "d": "Норвеги" } },
+{ "№": 1, "question": "3", "correctAnswer": "3", "answers": { "a": "1", "b": "2", "c": "4", "d": "5" } },
+{ "№": 1, "question": "2018", "correctAnswer": "2018", "answers": { "a": "2019", "b": "2017", "c": "2020", "d": "2021" } },
+{ "№": 1, "question": "5.1 тэрбум", "correctAnswer": "5.1 тэрбум", "answers": { "a": "5.2 тэрбум", "b": "6.1 тэрбум", "c": "6.1 тэрбум", "d": "4.9тэрбум" } },
+{ "№": 1, "question": "Trade.mn", "correctAnswer": "Trade.mn", "answers": { "a": "DAX.mn", "b": "IDAX.mn", "c": "Coinhub.mn", "d": "complex.mn" } },
+{ "№": 1, "question": "2019 оны 3сар", "correctAnswer": "2019 оны 3сар", "answers": { "a": "2019 оны 2сар", "b": "2019 оны 4сар", "c": "2019 оны 5сар", "d": "2019 оны 6сар" } },
+{ "№": 1, "question": "Үнэгүй", "correctAnswer": "Үнэгүй", "answers": { "a": "1 төгрөг", "b": "0.3 төгрөг", "c": "5 төгрөг", "d": "3 төгрөг" } },
+{ "№": 1, "question": "90", "correctAnswer": "90", "answers": { "a": "80", "b": "70", "c": "50", "d": "30" } },
+{ "№": 1, "question": "Blockchain дээр суурилсан урамшууллын оноо", "correctAnswer": "Blockchain дээр суурилсан урамшууллын оноо", "answers": { "a": "Арилжааны хэрэгсэл", "b": "Stablecoin", "c": "Meme token", "d": "Security token" } },
+{ "№": 1, "question": "IDAX.exchange", "correctAnswer": "IDAX.exchange", "answers": { "a": "Trade.mn", "b": "IDAX.mn", "c": "Coinhub.mn", "d": "complex.mn" } },
+{ "№": 1, "question": "5", "correctAnswer": "5", "answers": { "a": "4", "b": "3", "c": "2", "d": "" } },
+{ "№": 1, "question": "4", "correctAnswer": "4", "answers": { "a": "5", "b": "3", "c": "6", "d": "2" } },
+{ "№": 1, "question": "2", "correctAnswer": "2", "answers": { "a": "1", "b": "3", "c": "0", "d": "" } }
+]
 
     //This will hold the new shuffled questions
     var shuffledQuestions = [];
