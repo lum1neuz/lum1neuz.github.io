@@ -117,3 +117,8 @@ h1 {
     color:#fff;
     outline: 0;
 }
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
