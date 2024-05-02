@@ -111,3 +111,14 @@ p {
 h1 {
     font-family: 'MyWebFont', Fallback, sans-serif;
 }
+
+.btn:active, .btn:hover {
+    background-color: transparent;
+    color:#fff;
+    outline: 0;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}

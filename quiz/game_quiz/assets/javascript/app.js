@@ -133,7 +133,7 @@ $(document).ready(function () {
           "correctAnswer": "Худалдаа хөгжлийн банк",
           "answers": {
             "a": "Ариг",
-            "b": "Улаанбаатар",
+            "b": "М",
             "c": "Богд",
             "d": "Худалдаа хөгжлийн банк"
           }
@@ -144,7 +144,7 @@ $(document).ready(function () {
           "correctAnswer": "Initial public offering",
           "answers": {
             "a": "Initial public order",
-            "b": "Inclusive public offer",
+            "b": "Inclusive public offering",
             "c": "Inclusive public order",
             "d": "Initial public offering"
           }
@@ -154,7 +154,7 @@ $(document).ready(function () {
           "question": " Хөрөнгийн зах зээл дээрх хувьцааны ханшийн өсөлтийг юуны зах зээл гэдэг вэ?",
           "correctAnswer": "Бухын",
           "answers": {
-            "a": " Бугын",
+            "a": "Бугын",
             "b": "Баавгайн",
             "c": "Могойн",
             "d": "Бухын"
@@ -356,17 +356,6 @@ $(document).ready(function () {
             "b": "Runescape",
             "c": "Sims",
             "d": "Decentraland"
-          }
-        },
-        {
-          "№": 1,
-          "question": "АрдКойны төрөлх бирж аль вэ?",
-          "correctAnswer": "idax",
-          "answers": {
-            "a": "Trade",
-            "b": "Coinhub",
-            "c": "Complex",
-            "d": "idax"
           }
         },
         {
@@ -888,13 +877,13 @@ $(document).ready(function () {
         },
         {
           "№": 1,
-          "question": "2019 оны 3сар",
+          "question": "Хэзээ Ардкойны хамгийн анхны арилжаа явагдсан бэ?",
           "correctAnswer": "2019 оны 3сар",
           "answers": {
             "a": "2019 оны 2сар",
             "b": "2019 оны 4сар",
             "c": "2019 оны 5сар",
-            "d": "2019 оны 6сар"
+            "d": "2019 оны 3сар"
           }
         },
         {
@@ -917,17 +906,6 @@ $(document).ready(function () {
             "b": "Stablecoin",
             "c": "Blockchain дээр суурилсан урамшууллын оноо",
             "d": "Security token"
-          }
-        },
-        {
-          "№": 1,
-          "question": "Ардкойны үндсэн бирж юу вэ?",
-          "correctAnswer": "IDAX.exchange",
-          "answers": {
-            "a": "Trade.mn",
-            "b": "IDAX.mn",
-            "c": "Coinhub.mn",
-            "d": "complex.mn"
           }
         },
         {
