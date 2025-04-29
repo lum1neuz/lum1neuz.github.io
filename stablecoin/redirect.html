@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        // Redirect to Google Play
+        window.location.href = "https://play.google.com/store/apps/details?id=com.nexowallet";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // Redirect to App Store
+        window.location.href = "https://apps.apple.com/us/app/nexo-crypto-wealth-platform/id1455341917";
+      } else {
+        // Optional: Redirect to a fallback website
+        window.location.href = "https://www.stablecoin.mn";
+      }
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
